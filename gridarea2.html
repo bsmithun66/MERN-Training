@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(4, 100px);
+            grid-template-areas: 
+                "k k mp mp"
+                "k k mp mp"
+                "r r r r"
+                "b b up up";
+            gap: 10px;
+            height: 500px;
+            
+        }
+        .k{
+            grid-area: k;
+            background-color: black;
+        }
+        .mp{
+            grid-area: mp;
+            background-color: black;
+        }
+        .r{
+            grid-area: r;
+            background-color: black;
+        }
+        .b{
+            grid-area: b;
+            background-color: black;
+        }
+        .up{
+            grid-area: up;
+            background-color: black;
+        }
+        .k,
+        .mp,
+        .r,
+        .b,
+        .up {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="k">Kashmeer</div>
+        <div class="mp">Madhya Pradesh</div>
+        <div class="r">Rajasthan</div>
+        <div class="b">Bihar</div>
+        <div class="up">Uttar Pradesh</div>
+    </div>
+    
+</body>
+</html>
