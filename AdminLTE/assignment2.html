@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminLTE</title>
+    <style>
+    
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size:14px;
+}
+
+.main{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidbar{
+    width:250px;
+    background:#343a40;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.web-name{
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.logo{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background-image:url(a1.png);
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.site-name{
+    color:white;
+    font-size:16px;
+}
+
+.menu{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+}
+
+.menu-item{
+    height:55px;
+    width:230px;
+    color:#dee2e6;
+    display:flex;
+    align-items:center;
+    padding-left:20px;
+    border-radius:8px;
+    font-size:14px;
+    background:transparent;
+}
+
+.menu-item:hover{
+    background:#495057;
+}
+
+p1,p2{
+    color:white;
+    width:230px;
+    font-size:18px;
+}
+.wrapper{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    background:#2c3136;
+    color:white;
+}
+
+nav{
+    height:70px;
+    width:100%;
+    background:#212529;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 25px;
+    border-bottom:1px solid #495057;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:22px;
+}
+
+.box1{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.box2{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+a{
+
+    text-decoration:none;
+    color:white;
+    font-size:14px;
+    white-space:nowrap
+}   
+
+.search{
+    color: white;
+    height:18px;
+    width:18px;
+    background-image:url(loupe.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.comments{
+    height:18px;
+    width:18px;
+    background-image:url(comment.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.notification{
+    height:18px;
+    width:18px;
+    background-image:url(active.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.expand{
+    height:18px;
+    width:18px;
+    background-image:url(expand.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.mode{
+    height:18px;
+    width:18x;
+    background-image:url(night-mode.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.user{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.pic{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    background-image:url(download.jpeg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.user-name{
+    color:white;
+    font-size:14px;
+}
+
+.container{
+    flex:1;
+    padding:20px;
+}
+
+.container1{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.subcontain1{
+    font-size:34px;
+    font-weight:400;
+}
+
+.container2{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.box3,
+.box4,
+.box5,
+.box6{
+    height: 145px;
+    border-radius:10px;
+    padding:15px;
+    position:relative;
+    overflow:hidden;
+}
+
+.box3{
+    background-color:rgb(13,110,253);
+    color:white;
+}
+
+.box4{
+    background-color:rgb(25,135,84);
+    color:white;
+}
+
+.box5{
+    background-color:rgb(255,193,7);
+    color:black;
+}
+
+.box6{
+    background-color:rgb(220,53,69);
+    color:white;
+}
+
+.box3 h1,
+.box4 h1,
+.box5 h1,
+.box6 h1{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.container3{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+}
+
+.Sales2,
+.Vistors{
+    height:420px;
+    border-radius:10px;
+    border:1px solid #495057;
+    background-color:#212529;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.search,
+.comments,
+.notification,
+.expand,
+.mode{
+    filter:invert(1);
+}
+.Sales2{
+    background-image:url(bo1.png);
+}
+
+.Vistors{
+    background-image:url(bo2.png);
+}
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="sidbar">
+            <div class="web-name">
+                <div class="logo"></div>
+                <div class="site-name">AdminLTE 4</div>    
+            </div>
+            <div class="menu">
+                <div class="menu-item">Dashboard</div>
+                <div class="menu-item">Theme Generate</div>
+                <div class="menu-item">Widgets</div>
+                <div class="menu-item">Layout Options</div>
+                <div class="menu-item">UI Elements</div>
+                <div class="menu-item">Mailbox</div>
+                <div class="menu-item">Forms</div>
+                <div class="menu-item">Tables</div>
+                <p1>PAGES</p1>
+                <div class="menu-item">Pages</div>
+                <p2>EXAMPLES</p2>
+                <div class="menu-item">Auth</div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <nav>
+        <div class="box1">
+            <div class="menu"></div>
+            
+            <a href="#">Live Preview</a>
+            <a href="#">Documentation</a>
+        </div>
+            <div class="box2">
+                    <div class="search"></div>
+                    <div class="comments"></div>
+                    <div class="notification"></div>
+                    <div class="expand"></div>
+                    <div class="mode"></div>
+                    <div class="user">
+                        <div class="pic"></div>
+                        <div class="user-name">B S Mithun</div>
+                    </div>
+                </div>
+            </nav>
+             <div class="container">
+                <div class="container1">
+                    <div class="subcontain1">Dashboard</div>
+                    <div class="subcontain2">Home / Dashboard</div>
+                </div>
+                <div class="container2">
+                    <div class="box3">
+                        <h1>150</h1>
+                        <p>New Orders</p>
+                    </div>
+                    <div class="box4">
+                        <h1>53%</h1>
+                        <p>Bounce Rate</p>
+                    </div>
+                    <div class="box5">
+                        <h1>44</h1>
+                        <p>New Registrations</p>
+                    </div>
+                    <div class="box6">
+                        <h1>65</h1>
+                        <p>Unique Vistors</p>
+                    </div>
+                </div>
+                <div class="container3">
+                    <div class="Sales2"></div>
+                    <div class="Vistors"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>  
+</body>
+</html>
